@@ -12,7 +12,7 @@
 
  Technologies and Languages 
 </h2>
-
+<div aling="center">
 ![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)
 ![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
 ![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
@@ -26,3 +26,17 @@
 ![Microsoft Powerpoint](https://img.shields.io/badge/Microsoft_PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white)
 ![Microsoft Office](https://img.shields.io/badge/Microsoft_Office-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white)
 ![Microsoft word](https://img.shields.io/badge/Microsoft_Word-2B579A?style=for-the-badge&logo=microsoft-word&logoColor=white)
+</div>
+
+<h2>
+    My Current Workstation Specification 
+</h2>
+
+<div align="center">
+  <div display="inline-block">
+![Laptop](https://img.shields.io/badge/Windows-ASUS-0078D6?style=for-the-badge&logo=windows&logoColor=white) 
+<br>
+
+![CPU](https://img.shields.io/badge/Intel-Core_i3_4th-0071C5?style=for-the-badge&logo=intel&logoColor=white)
+</div>
+ 
