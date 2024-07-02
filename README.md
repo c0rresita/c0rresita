@@ -34,10 +34,10 @@
 
 <div align="center">
   
-![Laptop](https://img.shields.io/badge/Windows-ASUS-0078D6?style=for-the-badge&logo=windows&logoColor=white) 
-<br>
+![Laptop](https://img.shields.io/badge/Windows-Modelo-ROG-Strix-G513IH_G513IH-0078D6?style=for-the-badge&logo=windows&logoColor=white) 
 
-![CPU](https://img.shields.io/badge/Intel-Core_i3_4th-0071C5?style=for-the-badge&logo=intel&logoColor=white)
+
+![CPU](https://img.shields.io/badge/Rayzen_7_4800H?style=for-the-badge&logo=intel&logoColor=white)
 </div>
 
  
