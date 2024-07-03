@@ -1,12 +1,4 @@
-<a href="https://github.com/c0rresita" target="_blank">
-    <img alt="GitHub followers" src="https://img.shields.io/github/followers/c0rresita=Github%20followers&style=for-the-badge">
-  </a> <br> <br>
-  <a href="https://github.com/c0rresita" target="_blank">
-    <img src="https://komarev.com/ghpvc/?username=c0rresita&label=Views&color=brightgreen&style=flat-square" alt="views on github" />
-</a>
 
-<br>
-<br>
 <h2 align="left">ʜᴇʟʟᴏ, ᴍʏ ɴᴀᴍᴇ ɪꜱ ᴄ0ʀʀᴇꜱɪᴛᴀ ᴀɴᴅ ɪ ᴡᴀɴᴛ ᴛᴏ ᴄʀᴇᴀᴛᴇ ᴀ ᴄᴏᴍᴍᴜɴɪᴛʏ ᴏꜰ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ ᴛʜᴀᴛ ᴛᴏᴜᴄʜᴇꜱ ᴀ ʟɪᴛᴛʟᴇ ᴏꜰ ᴇᴠᴇʀʏᴛʜɪɴɢ.</h2>
 
 ###
@@ -61,3 +53,8 @@
 <img src="https://raw.githubusercontent.com/c0rresita/c0rresita/output/snake.svg" alt="Snake animation" />
 
 ###
+
+
+<a href="https://github.com/c0rresita" target="_blank">
+    <img src="https://komarev.com/ghpvc/?username=c0rresita&label=Views&color=brightgreen&style=flat-square" alt="views on github" />
+</a>
