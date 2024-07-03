@@ -50,9 +50,7 @@
 
 ###
 
-<img src="https://raw.githubusercontent.com/c0rresita/c0rresita/output/snake.svg" alt="Snake animation" />
 
-###
 
 
 <a href="https://github.com/c0rresita" target="_blank">
