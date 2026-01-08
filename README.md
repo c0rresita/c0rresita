@@ -70,8 +70,12 @@ areas = {
 
 <div align="center">
 
-![Snake animation](https://raw.githubusercontent.com/c0rresita/c0rresita/output/github-contribution-grid-snake.svg)
+
+<img src="https://raw.githubusercontent.com/c0rresita/c0rresita/output/snake.svg" alt="Snake animation" />
+
+###
   
   **¡Gracias por visitar mi perfil!** 🚀
   
 </div>
+
