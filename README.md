@@ -1,17 +1,12 @@
 <div align="center">
 
-<table>
-<tr>
-<td align="center">
-  <img src="https://github.com/c0rresita.png" width="150" style="border-radius: 50%;" />
-  <h1>c0rresita</h1>
-  <p>Estudiante ASIX | Administración de Sistemas | Ciberseguridad</p>
-  
-  ![Profile Views](https://komarev.com/ghpvc/?username=c0rresita&color=grey&style=flat-square)
-  
-</td>
-</tr>
-</table>
+<img src="https://github.com/c0rresita.png" width="150" />
+
+# c0rresita
+
+**Estudiante ASIX | Administración de Sistemas | Ciberseguridad**
+
+![Profile Views](https://komarev.com/ghpvc/?username=c0rresita&color=grey&style=flat-square)
 
 </div>
 
@@ -70,12 +65,8 @@ areas = {
 
 <div align="center">
 
-
-<img src="https://raw.githubusercontent.com/c0rresita/c0rresita/output/snake.svg" alt="Snake animation" />
-
-###
+![Snake animation](https://raw.githubusercontent.com/c0rresita/c0rresita/output/github-contribution-grid-snake.svg)
   
   **¡Gracias por visitar mi perfil!** 🚀
   
 </div>
-
