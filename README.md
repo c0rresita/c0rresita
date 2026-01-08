@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="https://github.com/c0rresita.png" width="150" />
+<a href="https://github.com/c0rresita">
+  <img src="https://github.com/c0rresita.png" width="150" style="border-radius:50%;" alt="c0rresita" />
+</a>
 
 # c0rresita
 
