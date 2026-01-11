@@ -6,7 +6,7 @@
 
 # c0rresita
 
-**Estudiante ASIX | Administración de Sistemas | Ciberseguridad**
+**Estudiante | Administración de Sistemas y Redes**
 
 ![Profile Views](https://komarev.com/ghpvc/?username=c0rresita&color=grey&style=flat-square)
 
@@ -14,14 +14,11 @@
 
 ## 🔐 Sobre mí
 
-Estudiante de ASIX - Administración de Sistemas Informáticos y Redes trabajando actualmente en CIMNE - Centro Internacional de Métodos Numéricos en la Ingeniería. Me apasiona la ciberseguridad y desarrollo aplicaciones en mi tiempo libre.
-
 - 💼 Trabajo en CIMNE - Centro Internacional de Métodos Numéricos en la Ingeniería
 - 🎓 Estudio ASIX - Administración de Sistemas Informáticos y Redes
 - 🔐 Me interesa la ciberseguridad y ethical hacking
-- 💻 Creo aplicaciones y herramientas en mi tiempo libre
+- 💻 Creo aplicaciones y herramientas cuando me aburro
 - 🌐 Portfolio: [c0rresita.github.io](https://c0rresita.github.io)
-- 🛠️ Trabajo con Python, Bash y tecnologías web
 
 ## 🛠️ Tecnologías y Herramientas
 
@@ -43,25 +40,19 @@ Estudiante de ASIX - Administración de Sistemas Informáticos y Redes trabajand
 ## 💻 Áreas de Interés
 
 ```python
-areas = {
-    "Formación": ["ASIX", "Redes", "Administración de Sistemas"],
+
+    "Formación": [ "Redes", "Administración de Sistemas"],
     "Ciberseguridad": ["Ethical Hacking", "Network Security", "Security Tools"],
     "Desarrollo": ["Python Apps", "Automation Scripts", "Web Development"],
-    "Sistemas": ["Linux", "Windows Server", "System Administration"]
-}
+    "Sistemas": ["Linux", "Windows", "Windows Servers", "Linux Servers"]
+
 ```
 
 ## 🎯 Objetivos 2026
 
 - [ ] Finalizar mis estudios de ASIX con éxito
 - [ ] Aprender más sobre seguridad de redes y sistemas
-- [ ] Desarrollar más aplicaciones y herramientas útiles
-- [ ] Contribuir a proyectos open source
-- [ ] Ampliar mis conocimientos en administración de sistemas
-
-## 💡 Filosofía
-
-> "El aprendizaje nunca termina. La administración de sistemas y la seguridad son un viaje continuo."
+- [ ] Publicar 5 aplicaciones y herramientas útiles
 
 ---
 
@@ -72,3 +63,4 @@ areas = {
   **¡Gracias por visitar mi perfil!** 🚀
   
 </div>
+
