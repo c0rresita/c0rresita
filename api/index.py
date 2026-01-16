@@ -1,4 +1,4 @@
-from flask import Flask, Response
+from flask import Flask, Response, request
 from datetime import datetime, timedelta
 import os
 
@@ -7,10 +7,21 @@ app = Flask(__name__)
 # Usamos variable de entorno para persistencia (Vercel KV o similar)
 # Por ahora usamos contador temporal
 counter = {"views": 0, "daily": {}}
+visitors = []  # Lista de IPs visitantes
 
 def get_views_data():
     """Simula obtener datos - en producción usar Vercel KV o DB"""
     today = datetime.now().strftime("%Y-%m-%d")
+    
+    # Capturar IP del visitante
+    ip = request.headers.get('X-Forwarded-For', request.remote_addr)
+    if ip:
+        ip = ip.split(',')[0].strip()
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        visitors.append({"ip": ip, "time": timestamp})
+        # Mantener solo las últimas 10 visitas
+        if len(visitors) > 10:
+            visitors.pop(0)
     
     counter["views"] += 1
     if today not in counter["daily"]:
@@ -123,6 +134,86 @@ def view_counter():
       <tspan fill="#B22222" font-weight="600">{peak_views} views/day</tspan>
     </text>
   </g>
+</svg>'''
+    
+    return Response(svg, mimetype='image/svg+xml', headers={
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        'Pragma': 'no-cache',
+        'Expires': '0'
+    })
+
+@app.route('/visitors.svg')
+@app.route('/api/visitors.svg')
+def visitors_table():
+    """Genera SVG con tabla de visitantes"""
+    
+    # Asegurar que hay datos
+    if not visitors:
+        visitors.append({"ip": "Waiting for visitors...", "time": "-"})
+    
+    svg = '''<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B0000;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#B22222;stop-opacity:0.8"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="10" y="10" width="580" height="380" rx="10" fill="none" stroke="#333333" stroke-width="1" opacity="0.5"/>
+  
+  <rect x="30" y="30" width="540" height="50" rx="8" fill="url(#headerGradient)"/>
+  
+  <text x="300" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+        font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle" filter="url(#glow)">
+    Recent Visitors
+  </text>
+  
+  <line x1="40" y1="100" x2="560" y2="100" stroke="#333333" stroke-width="1"/>
+  
+  <text x="50" y="120" font-family="monospace" font-size="13" font-weight="600" fill="#4d4d4d">IP Address</text>
+  <text x="380" y="120" font-family="monospace" font-size="13" font-weight="600" fill="#4d4d4d">Timestamp</text>
+  
+  <line x1="40" y1="130" x2="560" y2="130" stroke="#333333" stroke-width="1"/>
+'''
+    
+    # Generar filas de la tabla (últimas 10 visitas)
+    y_position = 155
+    row_colors = ["#1a1a1a", "#2a2a2a"]
+    
+    for idx, visitor in enumerate(reversed(visitors[-10:])):
+        row_color = row_colors[idx % 2]
+        
+        # Fondo de fila alternado
+        svg += f'''  <rect x="40" y="{y_position - 18}" width="520" height="25" fill="{row_color}" opacity="0.05" rx="3"/>
+'''
+        
+        # IP
+        svg += f'''  <text x="50" y="{y_position}" font-family="monospace" font-size="12" fill="#1a1a1a">
+    {visitor['ip'][:45]}
+  </text>
+'''
+        
+        # Timestamp
+        svg += f'''  <text x="380" y="{y_position}" font-family="monospace" font-size="11" fill="#4d4d4d">
+    {visitor['time']}
+  </text>
+'''
+        
+        y_position += 28
+        
+        if y_position > 360:  # Límite de altura
+            break
+    
+    svg += '''  <text x="300" y="375" font-family="monospace" font-size="10" fill="#8B0000" text-anchor="middle">
+    Last 10 unique visitors
+  </text>
 </svg>'''
     
     return Response(svg, mimetype='image/svg+xml', headers={
