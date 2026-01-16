@@ -8,7 +8,7 @@
 
 **Estudiante | Administración de Sistemas y Redes**
 
-![Profile Views](./github-profile-animation.svg)
+![Profile Views](https://c0rresita.vercel.app/view-counter.svg)
 
 </div>
 
