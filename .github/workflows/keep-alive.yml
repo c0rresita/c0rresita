@@ -1,0 +1,19 @@
+name: Refresh Animation
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # Cada 30 minutos
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      - name: Keep workflow active
+        run: |
+          echo "Workflow running at $(date)"
+          echo "This keeps the repository active"
