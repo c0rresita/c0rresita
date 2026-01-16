@@ -1,0 +1,99 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradiente para el gráfico (rojo oscuro) -->
+    <linearGradient id="graphGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B0000;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#450000;stop-opacity:0.1"/>
+    </linearGradient>
+    
+    <!-- Gradiente animado para la línea -->
+    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B0000;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#B22222;stop-opacity:1">
+        <animate attributeName="offset" values="0.3;0.7;0.3" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#8B0000;stop-opacity:1"/>
+    </linearGradient>
+    
+    <!-- Filtro de sombra -->
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+    
+    <!-- Filtro de brillo -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Fondo transparente -->
+  
+  <!-- Borde del card -->
+  <rect x="20" y="20" width="760" height="360" rx="10" fill="none" stroke="#333333" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Contador de views (número grande) - PLACEHOLDER -->
+  <text x="400" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+        font-size="72" font-weight="bold" fill="#1a1a1a" text-anchor="middle">
+    2
+  </text>
+  
+  <!-- Texto de cambio - PLACEHOLDER -->
+  <text x="400" y="170" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+        font-size="14" fill="#8B0000" text-anchor="middle">
+    ↗ +2 this week
+  </text>
+  
+  <!-- Línea separadora -->
+  <line x1="60" y1="200" x2="740" y2="200" stroke="#333333" stroke-width="1"/>
+  
+  <!-- Timeline label -->
+  <text x="60" y="225" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+        font-size="14" font-weight="500" fill="#4d4d4d">
+    Last 30 Days Activity
+  </text>
+  
+  <!-- Grid del gráfico (líneas horizontales) -->
+  <g opacity="0.2">
+    <line x1="60" y1="250" x2="740" y2="250" stroke="#444444" stroke-width="1"/>
+    <line x1="60" y1="290" x2="740" y2="290" stroke="#444444" stroke-width="1"/>
+    <line x1="60" y1="330" x2="740" y2="330" stroke="#444444" stroke-width="1"/>
+  </g>
+  
+  <!-- Labels del eje Y -->
+  <text x="50" y="254" font-family="monospace" font-size="11" fill="#888888" text-anchor="end">2</text>
+  <text x="50" y="294" font-family="monospace" font-size="11" fill="#888888" text-anchor="end">1</text>
+  <text x="50" y="334" font-family="monospace" font-size="11" fill="#888888" text-anchor="end">0</text>
+  
+  <!-- Área del gráfico (relleno) - PLACEHOLDER -->
+  <path d="M 60,330 L 60.0,330.0 L 82.66666666666667,330.0 L 105.33333333333334,330.0 L 128.0,330.0 L 150.66666666666669,330.0 L 173.33333333333334,330.0 L 196.0,330.0 L 218.66666666666669,330.0 L 241.33333333333334,330.0 L 264.0,330.0 L 286.6666666666667,330.0 L 309.33333333333337,330.0 L 332.0,330.0 L 354.6666666666667,330.0 L 377.33333333333337,330.0 L 400.0,330.0 L 422.6666666666667,330.0 L 445.33333333333337,330.0 L 468.0,330.0 L 490.6666666666667,330.0 L 513.3333333333334,330.0 L 536.0,330.0 L 558.6666666666667,330.0 L 581.3333333333334,330.0 L 604.0,330.0 L 626.6666666666667,330.0 L 649.3333333333334,330.0 L 672.0,330.0 L 694.6666666666667,330.0 L 717.3333333333334,330.0 L 740.0,210.0 L 740,330 L 60,330 Z" 
+        fill="url(#graphGradient)" opacity="0.5"/>
+  
+  <!-- Línea del gráfico - PLACEHOLDER -->
+  <path d="M 60,330 L 60.0,330.0 L 82.66666666666667,330.0 L 105.33333333333334,330.0 L 128.0,330.0 L 150.66666666666669,330.0 L 173.33333333333334,330.0 L 196.0,330.0 L 218.66666666666669,330.0 L 241.33333333333334,330.0 L 264.0,330.0 L 286.6666666666667,330.0 L 309.33333333333337,330.0 L 332.0,330.0 L 354.6666666666667,330.0 L 377.33333333333337,330.0 L 400.0,330.0 L 422.6666666666667,330.0 L 445.33333333333337,330.0 L 468.0,330.0 L 490.6666666666667,330.0 L 513.3333333333334,330.0 L 536.0,330.0 L 558.6666666666667,330.0 L 581.3333333333334,330.0 L 604.0,330.0 L 626.6666666666667,330.0 L 649.3333333333334,330.0 L 672.0,330.0 L 694.6666666666667,330.0 L 717.3333333333334,330.0 L 740.0,210.0" 
+        fill="none" stroke="url(#lineGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"/>
+  
+  <!-- Puntos en los picos - PLACEHOLDER -->
+  
+  <circle cx="740.0" cy="210.0" r="4" fill="#FFFFFF">
+    <animate attributeName="r" values="4;6;4" dur="2.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2.0s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Labels del eje X (fechas) -->
+  <text x="60" y="355" font-family="monospace" font-size="10" fill="#4d4d4d">30d ago</text>
+  <text x="350" y="355" font-family="monospace" font-size="10" fill="#4d4d4d" text-anchor="middle">15d ago</text>
+  <text x="720" y="355" font-family="monospace" font-size="10" fill="#4d4d4d" text-anchor="end">Today</text>
+  
+  <!-- Stats adicionales -->
+  <g transform="translate(580, 60)">
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+          font-size="12" fill="#4d4d4d">Peak: 
+      <tspan fill="#B22222" font-weight="600">2 views/day</tspan>
+    </text>
+  </g>
+
+</svg>

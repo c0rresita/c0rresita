@@ -1,0 +1,37 @@
+name: Update Profile Views
+
+on:
+  # Se ejecuta cada vez que alguien ve el README
+  # GitHub cuenta cada carga del README como workflow
+  workflow_dispatch:
+  
+  # También se puede programar para actualizar periódicamente
+  schedule:
+    - cron: '*/30 * * * *'  # Cada 30 minutos
+
+jobs:
+  update-views:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Count view and update SVG
+        run: |
+          python update_views.py
+      
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add github-profile-animation.svg views_data.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "📊 Update views - $(date '+%Y-%m-%d %H:%M:%S')"
+          git push || echo "No changes to push"
