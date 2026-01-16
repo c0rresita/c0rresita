@@ -8,7 +8,7 @@
 
 **Estudiante | Administración de Sistemas y Redes**
 
-![Profile Views](https://komarev.com/ghpvc/?username=c0rresita&color=grey&style=flat-square)
+![Profile Views](./github-profile-animation.svg)
 
 </div>
 
