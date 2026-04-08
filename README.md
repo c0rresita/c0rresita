@@ -46,13 +46,6 @@
     "Sistemas": ["Linux", "Windows", "Windows Servers", "Linux Servers"]
 
 ```
-
-## 🎯 Objetivos 2026
-
-- [ ] Finalizar mis estudios de ASIX con éxito
-- [ ] Aprender más sobre seguridad de redes y sistemas
-- [ ] Publicar 5 aplicaciones y herramientas útiles
-
 ---
 
 <div align="center">
